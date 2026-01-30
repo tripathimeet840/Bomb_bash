@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1889001f3faf1254b90150f042b5dc49, type: 3}
+  m_Name: Weeklies
+  m_EditorClassIdentifier: 
+  achievements:
+    array:
+    - id: Played20
+      title: Play 20 times
+      description: Play 20 times
+      reward: 1
+      CurrentNumber: 10
+      TotalNumber: 20
+      Redeemed: 0
+      WonPrice: 1000
+    - id: Played50
+      title: Play 50 times
+      description: Play 50 times
+      reward: 0
+      CurrentNumber: 10
+      TotalNumber: 50
+      Redeemed: 0
+      WonPrice: 5000
+    - id: Won20
+      title: Win 10 matches
+      description: Win 10 matches
+      reward: 0
+      CurrentNumber: 5
+      TotalNumber: 5
+      Redeemed: 0
+      WonPrice: 1000
+    - id: Won50
+      title: Won 50 matches
+      description: Won 50 matches
+      reward: 1
+      CurrentNumber: 5
+      TotalNumber: 50
+      Redeemed: 0
+      WonPrice: 5
+    - id: Upgrade your character
+      title: Upgrade your character
+      description: Upgrade your character
+      reward: 0
+      CurrentNumber: 0
+      TotalNumber: 1
+      Redeemed: 0
+      WonPrice: 1000

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6514348346961383099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540353208022910862}
+  - component: {fileID: 6852684243008786893}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &540353208022910862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514348346961383099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6852684243008786893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514348346961383099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47cadaaca2b858a498b0e3e893c4495f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolItems:
+  - prefabName: NormalBomb
+    prefab: {fileID: 2436639745529123611, guid: ef2115038320b0440a87cec399e7f0ef, type: 3}
+    poolSize: 10
+  - prefabName: FreezeBomb
+    prefab: {fileID: 5273689143336138679, guid: 9bc5c04c8d9e27a42ba1b960f27eb5a6, type: 3}
+    poolSize: 10
+  - prefabName: ClusterBomb
+    prefab: {fileID: 8549993922727256705, guid: 95c55271ce8d6fb40a6d1bced0cf426a, type: 3}
+    poolSize: 10
+  - prefabName: MiniBomb
+    prefab: {fileID: 2072126565304669283, guid: b8af4cf19d24d7c4c80b9e990fdf44ff, type: 3}
+    poolSize: 20
+  - prefabName: TimeBomb
+    prefab: {fileID: 13112721317466090, guid: 162ad5f2693cea043847dd4c5d09c85d, type: 3}
+    poolSize: 10
+  - prefabName: StickyBomb
+    prefab: {fileID: 8259162977911649114, guid: 4e628186d418fcf49a38f549f97b721f, type: 3}
+    poolSize: 10
+  - prefabName: EnemyStickyBomb
+    prefab: {fileID: 8259162977911649114, guid: 6386a6573bee8234981ed263f928ac58, type: 3}
+    poolSize: 10
+  - prefabName: PlayerBombVfx
+    prefab: {fileID: 4317082286083887132, guid: 9b7dd925be5836247a43f13123c833e7, type: 3}
+    poolSize: 5
+  - prefabName: ClusterBombVfx
+    prefab: {fileID: 4317082286083887132, guid: 9b7dd925be5836247a43f13123c833e7, type: 3}
+    poolSize: 5
+  - prefabName: MiniBombVfx
+    prefab: {fileID: 3873071972793070627, guid: 81b9c2c2a15f7934099779752e925220, type: 3}
+    poolSize: 5
+  - prefabName: FreezeBombVfx
+    prefab: {fileID: 7202582866574696329, guid: 68e7352ac80d55845ab71e314c9a672b, type: 3}
+    poolSize: 5
+  - prefabName: StickyBombVfx
+    prefab: {fileID: 7393719080537032581, guid: aba92aaa6c065d5479aa1bb30792c01f, type: 3}
+    poolSize: 5
+  - prefabName: TimeBombVfx
+    prefab: {fileID: 4934570199798800162, guid: 7e808aaef7930ae478ae02854ce1e6e4, type: 3}
+    poolSize: 5
+  - prefabName: LargeExplosive
+    prefab: {fileID: 6738816686622380761, guid: 483d7ab3f406e454f8f38c6659f17b48, type: 3}
+    poolSize: 5
+  - prefabName: Barrel
+    prefab: {fileID: 7439182240798239974, guid: 197bfde5e99914b418e859636c6e3227, type: 3}
+    poolSize: 5
+  - prefabName: Asteroid
+    prefab: {fileID: 3993966890202329646, guid: 426211f704e029447bebd40c6d677e9b, type: 3}
+    poolSize: 5

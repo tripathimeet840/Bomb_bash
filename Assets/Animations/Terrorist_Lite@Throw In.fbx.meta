@@ -1,0 +1,605 @@
+fileFormatVersion: 2
+guid: b3e6eb893412fdc4c9d32da9f082c7c4
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Throw In
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 41
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: ArtStore3D_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ArtStore3D_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Terrorist_Lite@Throw In(Clone)
+      parentName: 
+      position: {x: 0.011536199, y: -0.044118498, z: -0.04439543}
+      rotation: {x: 0.022955991, y: -0.028995281, z: 0.005122513, w: 0.9993028}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Hips
+      parentName: Terrorist_Lite@Throw In(Clone)
+      position: {x: -0, y: 1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftUpLeg
+      parentName: ArtStore3D_Hips
+      position: {x: -0.089099996, y: -0.062699996, z: 0}
+      rotation: {x: -0.18429987, y: -0.11265084, z: 0.05009986, w: 0.97510684}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftLeg
+      parentName: ArtStore3D_LeftUpLeg
+      position: {x: -0.059043996, y: -0.444885, z: -0.025888}
+      rotation: {x: 0.33541834, y: 0.07429733, z: -0.09139556, w: 0.9346771}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftFoot
+      parentName: ArtStore3D_LeftLeg
+      position: {x: -0.053548, y: -0.402127, z: -0.03292}
+      rotation: {x: -0.18483263, y: 0.10624576, z: 0.00052613765, w: 0.97700995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftToeBase
+      parentName: ArtStore3D_LeftFoot
+      position: {x: -0.034640998, y: -0.064563, z: 0.12404999}
+      rotation: {x: 0, y: -0.05102348, z: -0, w: 0.99869746}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightUpLeg
+      parentName: ArtStore3D_Hips
+      position: {x: 0.089099996, y: -0.062699996, z: 0}
+      rotation: {x: -0.019003645, y: 0.17339328, z: 0.74254805, w: 0.64668083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightLeg
+      parentName: ArtStore3D_RightUpLeg
+      position: {x: -0.449533, y: 0, z: 0}
+      rotation: {x: 0.049939804, y: -0.33318353, z: 0.010362595, w: 0.94148153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightFoot
+      parentName: ArtStore3D_RightLeg
+      position: {x: -0.40701, y: 0, z: 0}
+      rotation: {x: -0.15056492, y: 0.67669374, z: 0.12241846, w: 0.71023214}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightToeBase
+      parentName: ArtStore3D_RightFoot
+      position: {x: -0.144072, y: 0, z: 0}
+      rotation: {x: -0.42534894, y: 0.25452435, z: 0.7453013, w: -0.4458942}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Spine
+      parentName: ArtStore3D_Hips
+      position: {x: -0, y: 0.07, z: 0}
+      rotation: {x: 0.007353693, y: 0.084703885, z: -0.7108463, w: 0.6981896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Spine1
+      parentName: ArtStore3D_Spine
+      position: {x: -0.13062899, y: 0, z: 0}
+      rotation: {x: -0.015163795, y: 0.01321796, z: -0.003529871, w: 0.99979144}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Spine2
+      parentName: ArtStore3D_Spine1
+      position: {x: -0.13062899, y: 0, z: 0}
+      rotation: {x: -0.011356392, y: 0.016547542, z: 0.24126032, w: 0.97025293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftShoulder
+      parentName: ArtStore3D_Spine2
+      position: {x: -0.14734499, y: 0, z: 0}
+      rotation: {x: 0.019063836, y: 0.020596579, z: 0.49166128, w: 0.8703342}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftArm
+      parentName: ArtStore3D_LeftShoulder
+      position: {x: -0.107073, y: 0, z: 0}
+      rotation: {x: 0.3425738, y: -0.04058189, z: 0.071371965, w: 0.9358966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftForeArm
+      parentName: ArtStore3D_LeftArm
+      position: {x: -0.320997, y: 0, z: 0}
+      rotation: {x: -0.003336876, y: 0.00046960253, z: -0.0055635204, w: 0.99997884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHand
+      parentName: ArtStore3D_LeftForeArm
+      position: {x: -0.27094498, y: 0, z: 0}
+      rotation: {x: -0.62607414, y: 0.4812954, z: 0.055449646, w: 0.6109921}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandThumb1
+      parentName: ArtStore3D_LeftHand
+      position: {x: -0.049827, y: 0, z: 0}
+      rotation: {x: -0.3170891, y: 0.10283481, z: -0.004907428, w: 0.9427912}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandThumb2
+      parentName: ArtStore3D_LeftHandThumb1
+      position: {x: -0.026647998, y: 0, z: 0}
+      rotation: {x: 0.30922213, y: -0.04135389, z: -0.0019086385, w: 0.9500884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandThumb3
+      parentName: ArtStore3D_LeftHandThumb2
+      position: {x: -0.025431, y: 0, z: 0}
+      rotation: {x: -0.030760512, y: 0.002649604, z: -0.03978345, w: 0.99873126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandThumb4
+      parentName: ArtStore3D_LeftHandThumb3
+      position: {x: -0.026666999, y: 0, z: 0}
+      rotation: {x: -0.40948966, y: 0.27369955, z: 0.72354907, w: -0.48361507}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandMiddle1
+      parentName: ArtStore3D_LeftHand
+      position: {x: -0.054664, y: 0.052555, z: -0.017939}
+      rotation: {x: 0.15981221, y: -0.21704115, z: -0.26259995, w: 0.9264958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandMiddle2
+      parentName: ArtStore3D_LeftHandMiddle1
+      position: {x: -0.048632998, y: 0, z: 0}
+      rotation: {x: 0.00000029802305, y: -0.009300256, z: 0.030641355, w: 0.99948716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandMiddle3
+      parentName: ArtStore3D_LeftHandMiddle2
+      position: {x: -0.027652, y: 0, z: 0}
+      rotation: {x: -0.00000007549617, y: -0.011937611, z: 0.039333675, w: 0.99915487}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_LeftHandMiddle4
+      parentName: ArtStore3D_LeftHandMiddle3
+      position: {x: -0.020056, y: 0, z: 0}
+      rotation: {x: 0.08572555, y: -0.089288674, z: -0.6890498, w: 0.7140652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightShoulder
+      parentName: ArtStore3D_Spine2
+      position: {x: -0.080833994, y: 0.12319199, z: 0}
+      rotation: {x: 0.121717125, y: 0.07034735, z: -0.82571775, w: 0.5462842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightArm
+      parentName: ArtStore3D_RightShoulder
+      position: {x: -0.107073, y: 0, z: 0}
+      rotation: {x: -0.24126795, y: -0.06308887, z: -0.06486196, w: 0.9662311}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightForeArm
+      parentName: ArtStore3D_RightArm
+      position: {x: -0.320997, y: 0, z: 0}
+      rotation: {x: 0.008905959, y: 0.0015810573, z: 0.01237036, w: 0.9998826}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHand
+      parentName: ArtStore3D_RightForeArm
+      position: {x: -0.27094498, y: 0, z: 0}
+      rotation: {x: 0.65994924, y: 0.32554954, z: -0.14363389, w: 0.66170526}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandThumb1
+      parentName: ArtStore3D_RightHand
+      position: {x: -0.049827, y: 0, z: 0}
+      rotation: {x: 0.39452267, y: 0.07722344, z: -0.048234798, w: 0.9143642}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandThumb2
+      parentName: ArtStore3D_RightHandThumb1
+      position: {x: -0.026647998, y: 0, z: 0}
+      rotation: {x: -0.28587857, y: -0.023826806, z: 0.025657363, w: 0.9576259}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandThumb3
+      parentName: ArtStore3D_RightHandThumb2
+      position: {x: -0.025431, y: 0, z: 0}
+      rotation: {x: 0.027282523, y: -0.013414246, z: 0.035469715, w: 0.9989083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandThumb4
+      parentName: ArtStore3D_RightHandThumb3
+      position: {x: -0.026666999, y: 0, z: 0}
+      rotation: {x: 0.27369955, y: -0.40948966, z: -0.48361507, w: 0.72354907}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandMiddle1
+      parentName: ArtStore3D_RightHand
+      position: {x: -0.054664, y: -0.052555, z: -0.017939}
+      rotation: {x: -0.15835403, y: -0.23911029, z: 0.27346867, w: 0.9181314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandMiddle2
+      parentName: ArtStore3D_RightHandMiddle1
+      position: {x: -0.048632998, y: 0, z: 0}
+      rotation: {x: -0.00000022351732, y: -0.008517783, z: -0.030331686, w: 0.9995037}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandMiddle3
+      parentName: ArtStore3D_RightHandMiddle2
+      position: {x: -0.027652, y: 0, z: 0}
+      rotation: {x: -0.0000004802171, y: -0.009394318, z: -0.033448122, w: 0.9993963}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_RightHandMiddle4
+      parentName: ArtStore3D_RightHandMiddle3
+      position: {x: -0.020056, y: 0, z: 0}
+      rotation: {x: -0.03629057, y: -0.20428395, z: -0.71871984, w: 0.66362107}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Neck
+      parentName: ArtStore3D_Spine2
+      position: {x: -0.114946, y: 0.062059, z: 0}
+      rotation: {x: 0.0037187154, y: -0.005111605, z: -0.24491218, w: 0.9695247}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ArtStore3D_Head
+      parentName: ArtStore3D_Neck
+      position: {x: -0.119940005, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1889001f3faf1254b90150f042b5dc49, type: 3}
+  m_Name: Dailies
+  m_EditorClassIdentifier: 
+  achievements:
+    array:
+    - id: Played5
+      title: Play 5 times
+      description: Play 5 times
+      reward: 1
+      CurrentNumber: 5
+      TotalNumber: 5
+      Redeemed: 0
+      WonPrice: 1000
+    - id: Played10
+      title: Play 10 times
+      description: Play 10 times
+      reward: 0
+      CurrentNumber: 10
+      TotalNumber: 10
+      Redeemed: 0
+      WonPrice: 5000
+    - id: Won1
+      title: Won 1 match
+      description: Won 1 match
+      reward: 0
+      CurrentNumber: 1
+      TotalNumber: 1
+      Redeemed: 0
+      WonPrice: 500
+    - id: Won10
+      title: Won 5 matches
+      description: Won 2 matches
+      reward: 0
+      CurrentNumber: 5
+      TotalNumber: 5
+      Redeemed: 0
+      WonPrice: 1000
+    - id: Won15
+      title: Won 15 matches
+      description: Won 15 matches
+      reward: 1
+      CurrentNumber: 5
+      TotalNumber: 15
+      Redeemed: 0
+      WonPrice: 5
+    - id: Upgrade your character
+      title: Upgrade your character
+      description: Upgrade your character
+      reward: 0
+      CurrentNumber: 0
+      TotalNumber: 1
+      Redeemed: 0
+      WonPrice: 1000

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809956855388",
+    "project_id": "bomb-bash",
+    "storage_bucket": "bomb-bash.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809956855388:android:e0bed04e2975525c772099",
+        "android_client_info": {
+          "package_name": "com.drox.bombbash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvehvKZCuEg0ZGd41KkSeTekYUz1jfLbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

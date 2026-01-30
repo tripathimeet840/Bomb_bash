@@ -1,0 +1,12 @@
+newmtl Mat_4a3aa2f5-2fa3-4e6e-afb5-e49238cba90b
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 1345_Analog_Clock.jpg
+newmtl Dark Blue To Blue_5f767bfb-6c24-47ff-89c8-857c14c58439
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd gradient31.jpg
+newmtl Brown Rust_7455bc6d-85d9-4e05-acbd-cecd429f8193
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd texture_2.jpg
