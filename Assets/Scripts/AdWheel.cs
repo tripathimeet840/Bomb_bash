@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using System.Collections;
+using TMPro;
 using DG.Tweening;
 
 public class AdWheel : MonoBehaviour
@@ -16,13 +17,26 @@ public class AdWheel : MonoBehaviour
     int Coin;
     [SerializeField] Text coinsText;
     Vector3 startScale;
+
+    TextMeshProUGUI text2x;
   
 
     private void Start()
     {
         startScale = transform.localScale;
+
+        TextAnim();
     }
 
+
+    private void TextAnim()
+    {
+       text2x.transform.DOScale(text2x.transform.localScale, 2).SetEase(Ease.Linear).OnComplete(() =>
+       {
+           TextAnim();
+       });
+
+    }
     public void SetCoinsAmt(int _amt)
     {
         Coin = _amt;
@@ -89,17 +103,17 @@ public class AdWheel : MonoBehaviour
 
     public void GiveReward() // Called after ad watched
     {
-        float zRotation = arrowTransform.localEulerAngles.z;
-        if (zRotation > 180) zRotation -= 360;
+        //float zRotation = arrowTransform.localEulerAngles.z;
+        //if (zRotation > 180) zRotation -= 360;
 
         int multiplier = 1;
 
-        if (zRotation > -15 && zRotation < 15)
-            multiplier = 8;
-        else if ((zRotation > -90 && zRotation < -55) || (zRotation > 55 && zRotation < 90))
-            multiplier = 2;
-        else if ((zRotation > -55 && zRotation < -15) || (zRotation > 15 && zRotation < 55))
-            multiplier = 4;
+        //if (zRotation > -15 && zRotation < 15)
+        //    multiplier = 8;
+        //else if ((zRotation > -90 && zRotation < -55) || (zRotation > 55 && zRotation < 90))
+        multiplier = 2;
+        //else if ((zRotation > -55 && zRotation < -15) || (zRotation > 15 && zRotation < 55))
+        //    multiplier = 4;
 
         WinRewardManager winManager = FindObjectOfType<WinRewardManager>();
         if (winManager != null)

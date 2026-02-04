@@ -1,4 +1,5 @@
 ﻿using GoogleMobileAds.Api;
+using GoogleMobileAds.Ump.Api;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,7 @@ public class Mediation_Manager : MonoBehaviour
     [SerializeField] private string _AndroidBannerAdUnitId = "ca-app-pub-6323451669175814/9886033888";
     [SerializeField] private string _AndroirdInterstitialAdUnitId = "ca-app-pub-6323451669175814/2494629029";
     [SerializeField] private string _AndroidRewardedAdUnitId = "ca-app-pub-6323451669175814/4971080132";
+    [SerializeField] private string _AndroidNativeAdUnitId = "ca-app-pub-3940256099942544/2247696110";
     [SerializeField] private string _AndroidAppOpenAdUnitId = "ca-app-pub-xxx/xxx";
 
 
@@ -24,23 +26,28 @@ public class Mediation_Manager : MonoBehaviour
     [SerializeField] private string _IOSbannerAdUnitId = "ca-app-pub-6323451669175814/5531596142";
     [SerializeField] private string _IOSinterstitialAdUnitId = "ca-app-pub-6323451669175814/2570390882";
     [SerializeField] private string _IOSrewardedAdUnitId = "ca-app-pub-6323451669175814/1257309213";
+    [SerializeField] private string _IOSNativeAdUnitId = "ca-app-pub-3940256099942544/3986624511";
     [SerializeField] private string _IOSAppOpenAdUnitId = "ca-app-pub-xxx/xxx";
 
 
     private string _bannerAdUnitId = "unused";
     private string _interstitialAdUnitId = "unused";
     private string _rewardedAdUnitId = "unused";
+    private string _nativeAdUnitId = "unused";
 
 
     private BannerView _bannerView;
     private InterstitialAd _interstitialAd;
     private RewardedAd _rewardedAd;
+    private  NativeOverlayAd _nativeOverlayAd;
     public static Mediation_Manager mediation_Manager;
     public RewardType currentReward; // Assign this dynamically before showing an ad
     private string sceneToLoadAfterInterstitial = "";
 
     private void Awake()
     {
+       
+
         if (mediation_Manager == null)
         {
             mediation_Manager = this;
@@ -59,6 +66,7 @@ public class Mediation_Manager : MonoBehaviour
         _bannerAdUnitId = _AndroidBannerAdUnitId;
         _interstitialAdUnitId = _AndroirdInterstitialAdUnitId;
         _rewardedAdUnitId = _AndroidRewardedAdUnitId;
+        _nativeAdUnitId = _AndroidNativeAdUnitId;
 #elif UNITY_IOS
         _bannerAdUnitId = _IOSbannerAdUnitId;
         _interstitialAdUnitId = _IOSinterstitialAdUnitId;
@@ -78,6 +86,22 @@ public class Mediation_Manager : MonoBehaviour
             LoadBannerAd();
             LoadInterstitialAd();
             LoadRewardedAd();
+            LoadNativeAd();
+        });
+        //InitializeAds();
+    }
+
+    void InitializeAds()
+    {
+        // Initialize the Google Mobile Ads SDK.
+        MobileAds.Initialize((InitializationStatus initStatus) =>
+        {
+            // This callback is called once the MobileAds SDK is initialized.
+            Debug.Log("AdSINit");
+            LoadBannerAd();
+            LoadInterstitialAd();
+            LoadRewardedAd();
+            LoadNativeAd();
         });
     }
 
@@ -97,6 +121,8 @@ public class Mediation_Manager : MonoBehaviour
 
         // Listen to events the banner may raise.
         ListenToBannerAdEvents();
+
+
 
         Debug.Log("Banner view created.");
     }
@@ -538,7 +564,15 @@ public class Mediation_Manager : MonoBehaviour
                     // Disable revive button so it cannot be used again
                     if (UIManager.instance != null)
                     {
-                        UIManager.instance.DisableReviveButton();
+                        GameManager.instance.dieCount++;
+
+                        if (GameManager.instance.dieCount == 2)
+                        {
+                            UIManager.instance.DisableReviveButton();
+                            Debug.Log(" REVIVE BUTTON DISABLED");
+
+                        }
+
                     }
                 }
                 break;
@@ -571,6 +605,96 @@ public class Mediation_Manager : MonoBehaviour
         // Use any RewardType just for testing, e.g., Coins
         ShowRewardedAd(RewardType.Coins);
     }
+
+    #endregion
+
+    #region Native AD
+
+
+    public void LoadNativeAd()
+    {
+        // Clean up the old ad before loading a new one.
+        if (_nativeOverlayAd != null)
+        {
+            DestroyNativeAd();
+           // DestroyBannerAd();
+        }
+
+        Debug.Log("Loading native overlay ad.");
+
+        // Create a request used to load the ad.
+        var adRequest = new AdRequest();
+
+        // Optional: Define native ad options.
+        var options = new NativeAdOptions
+        {
+            AdChoicesPlacement = AdChoicesPlacement.TopRightCorner,
+            MediaAspectRatio = MediaAspectRatio.Any,
+        };
+
+        // Send the request to load the ad.
+        NativeOverlayAd.Load(_nativeAdUnitId, adRequest, options,
+            (NativeOverlayAd ad, LoadAdError error) =>
+            {
+                Debug.Log("Load native overlay ad. send request center >>>>>>>>>>>>>>>>");
+
+                if (error != null)
+                {
+                    Debug.LogError("Native Overlay ad failed to load an ad " +
+                               " with error: " + error);
+                    return;
+                }
+
+                // The ad should always be non-null if the error is null, but
+                // double-check to avoid a crash.
+                if (ad == null)
+                {
+                    Debug.LogError("Unexpected error: Native Overlay ad load event " +
+                               " fired with null ad and null error.");
+                    return;
+                }
+
+                // The operation completed successfully.
+                Debug.Log("Native Overlay ad loaded with response : " +ad.GetResponseInfo());
+                _nativeOverlayAd = ad;
+
+                // Register to ad events to extend functionality.
+               //RegisterEventHandlers(ad);
+            });
+
+    }
+    /// <summary>
+    /// Shows the ad.
+    /// </summary>
+    bool _isSdkInitialized =false;
+    public void ShowNativeAd()
+    {
+        if (_nativeOverlayAd == null)
+        {
+            Debug.Log(" Native Overlay ad. nul>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        }
+
+        if (_nativeOverlayAd != null)
+        {
+            Debug.Log("Showing Native Overlay ad.");
+            _nativeOverlayAd.Show();
+        }
+
+    }
+
+ 
+
+    void DestroyNativeAd()
+    {
+        if (_nativeOverlayAd != null)
+        {
+            Debug.Log("Destroying banner view.");
+            _nativeOverlayAd.Destroy();
+            _nativeOverlayAd = null;
+        }
+    }
+
 
     #endregion
 }

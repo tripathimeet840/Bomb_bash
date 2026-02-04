@@ -5,9 +5,54 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/LandingScene.unity
+    guid: ddca4c3b15b690d4b83d98f20c82ce05
+  - enabled: 1
+    path: Assets/Scenes/Battle-Fantasy New.unity
+    guid: f669438b810c85e42aae62e591fa0893
+  - enabled: 1
+    path: Assets/Scenes/BattleGround New.unity
+    guid: 8ddee8c146a26ea4eaa9ebcc3d3209e3
+  - enabled: 1
+    path: Assets/Scenes/Boxing New.unity
+    guid: ac4fc0034476bdf4aa44f118c1c2e274
+  - enabled: 1
+    path: Assets/Scenes/Building New.unity
+    guid: 341a9d3a53d871e45912930f1ac9ec27
+  - enabled: 1
+    path: Assets/Scenes/Carrom.unity
+    guid: 6935937c242dfea41ab1d86f406fa6b6
+  - enabled: 1
+    path: Assets/Scenes/Chess New.unity
+    guid: 79c68b60dfe020e489db4a6e4f41c74e
+  - enabled: 1
+    path: Assets/Scenes/City New.unity
+    guid: 6a2badd59ae85814e9776e601ab2eb30
+  - enabled: 1
+    path: Assets/Scenes/Football.unity
+    guid: 37d692daaddfbd249b61689884be61a3
+  - enabled: 1
+    path: Assets/Scenes/Desert New.unity
+    guid: bc48cf1e02730e547ba788c201f3079a
+  - enabled: 1
+    path: Assets/Scenes/Golf New.unity
+    guid: fefbd07fa4f09e941846fec69f556696
+  - enabled: 1
+    path: Assets/Scenes/Hellipad New.unity
+    guid: 4a708a5ddff303a48800ffc886f835e4
+  - enabled: 1
+    path: Assets/Scenes/Hexagon New.unity
+    guid: 6c84bdeac1e00fd4399bf8b8c488f4f3
+  - enabled: 1
+    path: Assets/Scenes/Retropolis New.unity
+    guid: b62f62f5405be4442ab168936ffc70ed
+  - enabled: 1
+    path: Assets/Scenes/SpaceX New.unity
+    guid: 9a7bc549ef4346942b62c0a00d7f4881
   - enabled: 1
     path: Assets/Scenes/RandomLevel.unity
     guid: ef13547f80b7ff948bb1f9b4bdeae640

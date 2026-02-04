@@ -74,6 +74,8 @@ public class GDPRScript : MonoBehaviour
         if (ConsentInformation.ConsentStatus == ConsentStatus.Required)
         {
             _consentForm.Show(OnShowForm);
+
+            
         }
     }
 

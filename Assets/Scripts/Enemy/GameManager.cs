@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject joystickVisual;
     public GameObject bgImage;
+    public int dieCount = 0;
 
     [Header("Music & SFX")]
     [SerializeField] private AudioSource musicSource;   
@@ -73,6 +74,15 @@ public class GameManager : MonoBehaviour
     {
         //Application.targetFrameRate = 60;
         uIManager = UIManager.instance;
+
+        Debug.LogWarning("native >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        Invoke("nativead", 5f);
+    }
+
+    public void nativead()
+    {
+        Mediation_Manager.mediation_Manager.ShowNativeAd();
+
     }
 
     private void Update()

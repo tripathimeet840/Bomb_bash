@@ -1,3 +1,4 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -74,6 +75,8 @@ public class RopeCut : MonoBehaviour
 
     public void BackToHome()
     {
-        SceneManager.LoadScene("LandingScene");
+
+        Mediation_Manager.mediation_Manager.ShowInterstitialThenLoadScene("LandingScene");
+      //  SceneManager.LoadScene("LandingScene");
     }
 }

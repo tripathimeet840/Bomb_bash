@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject timeBomb;
     public GameObject iceBomb;
     public GameObject stickyBomb;
+    public int dieCount = 0;
 
     private StickyBomb activeStickyBomb; 
 
@@ -69,7 +70,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        losePanel.SetActive(false);
+        //if(losePanel != null)
+        //{
+        //    losePanel.SetActive(false);
+
+        //}
+
+        losePanel.SetActive(false);      
         gameStarted = true;
         followCamera.SetActive(true);
         wonCamera.SetActive(false);

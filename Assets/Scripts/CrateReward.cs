@@ -32,7 +32,7 @@ public class ChestReward : MonoBehaviour
         // Update UI
         coinsText.text = coins.ToString();
         gemsText.text = gems.ToString();
-        xpText.text = xp.ToString();
+      ///  xpText.text = xp.ToString(); 
     }
 
     public void GiveCoins(int amount)
