@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void nativead()
     {
-        Mediation_Manager.mediation_Manager.ShowNativeAd();
+        Mediation_Manager.mediation_Manager.ShowAd();
 
     }
 
